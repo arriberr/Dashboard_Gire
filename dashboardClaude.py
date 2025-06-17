@@ -6,7 +6,18 @@ from plotly.subplots import make_subplots
 import numpy as np
 from datetime import datetime
 import warnings
+import openpyxl 
 warnings.filterwarnings('ignore')
+
+
+# Autenticación básica
+st.title("Dashboard GIRE")
+
+password = st.text_input("Contraseña", type="password")
+
+if password != "Gire2025":
+    st.warning("Contraseña incorrecta")
+    st.stop()
 
 # Configuración de la página
 st.set_page_config(
@@ -444,7 +455,7 @@ def main():
     st.markdown("---")
     st.markdown("""
     <div style='text-align: center; color: #666;'>
-        <p>🚀 Dashboard Financiero Interactivo | Desarrollado con Streamlit y Python</p>
+        <p>🚀 Dashboard Transacciones Interactivo | Desarrollado con Streamlit y Python</p>
         <p>📁 Carga tu archivo Excel con las columnas: AñoMes, Tipo_Operacion, Tipo_Canal, Trx, Ingresos, Recaudacion, Tipo</p>
     </div>
     """, unsafe_allow_html=True)
