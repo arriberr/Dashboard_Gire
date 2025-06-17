@@ -9,6 +9,12 @@ import warnings
 import openpyxl 
 warnings.filterwarnings('ignore')
 
+# Configuración de la página
+st.set_page_config(
+    page_title="Dashboard Financiero",
+    page_icon="💰",
+    layout="wide",
+    initial_sidebar_state="expanded"
 
 # Autenticación básica
 st.title("Dashboard GIRE")
@@ -19,12 +25,7 @@ if password != "Gire2025":
     st.warning("Contraseña incorrecta")
     st.stop()
 
-# Configuración de la página
-st.set_page_config(
-    page_title="Dashboard Financiero",
-    page_icon="💰",
-    layout="wide",
-    initial_sidebar_state="expanded"
+
 )
 
 # CSS personalizado
