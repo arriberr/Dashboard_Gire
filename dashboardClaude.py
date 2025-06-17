@@ -14,7 +14,7 @@ st.set_page_config(
     page_title="Dashboard Financiero",
     page_icon="💰",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded")
 
 # Autenticación básica
 st.title("Dashboard GIRE")
@@ -26,7 +26,7 @@ if password != "Gire2025":
     st.stop()
 
 
-)
+
 
 # CSS personalizado
 st.markdown("""
